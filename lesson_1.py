@@ -1,6 +1,31 @@
-bool_value = False
+value = "0"
+new_value = bool (value)
+print (new_value, type (new_value))
 
-print(bool_value, type(bool_value))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# some_value = 4
+#
+# bool_value_1 = (2 == some_value)
+# bool_value_1 = (2 != some_value)
+#
+# # bool_value_2 = ("q" in "q.werty")
+# bool_value = not bool_value_1
+# print(bool_value, type(bool_value))
 
 
 
