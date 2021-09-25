@@ -138,6 +138,8 @@ my_str_1 = "IIIII'm Qwerty"
 #     print(f"index '{index}' --> '{chr(index)}'")
 #
 count = 0
+do_loop = True
+
 while count < 10:
     print("This is while loop", count)
     count += 1
