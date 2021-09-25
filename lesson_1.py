@@ -73,12 +73,66 @@
 #     print("Надень шапку!")
 
 
-case = input("Кинь кубик:") # результат всегда str!!
-case = int(case)
-print(case)
-if case == 6:
-    print("Pobedil Vasya")
-elif case == 1:
-    print("Pobedil Petya")
-else:
-    print("Proigrali vse))")
+# case = input("Кинь кубик:") # результат всегда str!!
+# case = int(case)
+# print(case)
+# if case == 6:
+#     print("Pobedil Vasya")
+# elif case == 1:
+#     print("Pobedil Petya")
+# else:
+#     print("Proigrali vse))")
+
+
+#тернарный оператор
+# if case > 3:
+#     result = case ** 2
+# else:
+#     result = - case
+
+# from random import randint
+# case  = randint(1, 6)
+#
+# result = case ** 2 if case > 3 else - case
+#
+# print("Выпало число:", case, "Результат:", result)
+#################################
+# Строки и методы строк
+case = 1
+result = "qwe"
+print(f"Выпало число: {case} с результатом: {result} ")
+
+dir_name = "home"
+file_name = "test.py"
+path = f"{dir_name}/{file_name}"
+print(path)
+
+# # литералы
+# my_str_1 = "I'm Qwerty"
+# my_str_2 = "I'm Qwerty"
+# my_str_3 = "I'm Qwerty"
+# my_str_4 = "I'm Qwerty"
+#
+# index = -5
+# symbol = my_str_1[index]
+# print(symbol)
+
+# my_str_1 = "I'm Qwerty"
+# my_str_1_len = len(my_str_1)
+# print(my_str_1_len, my_str_1[my_str_1_len - 1])
+
+# срез строки
+my_str_1 = "IIIII'm Qwerty"
+# index = 5
+# new_str = my_str_1[: index] + "K" + my_str_1[index + 1 :]
+# print(new_str)
+
+# for symbol in my_str_1:
+#     if (symbol.lower() not in "eyuioa") and symbol.isupper():
+#         print(symbol)
+
+# for symbol in my_str_1:
+#     print(f"symbol '{symbol}' --> {ord(symbol)}")
+
+for index in range(ord(' '), ord('z') + 1, 2):
+    print(f"index '{index}' --> '{chr(index)}'")
