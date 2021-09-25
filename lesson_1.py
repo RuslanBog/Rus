@@ -134,5 +134,11 @@ my_str_1 = "IIIII'm Qwerty"
 # for symbol in my_str_1:
 #     print(f"symbol '{symbol}' --> {ord(symbol)}")
 
-for index in range(ord(' '), ord('z') + 1, 2):
-    print(f"index '{index}' --> '{chr(index)}'")
+# for index in range(ord(' '), ord('z') + 1, 2):
+#     print(f"index '{index}' --> '{chr(index)}'")
+#
+count = 0
+while count < 10:
+    print("This is while loop", count)
+    count += 1
+
