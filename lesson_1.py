@@ -1,20 +1,6 @@
-value = "0"
-new_value = bool (value)
-print (new_value, type (new_value))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# value = "0"
+# new_value = bool (value)
+# print (new_value, type (new_value))
 
 
 
@@ -26,22 +12,6 @@ print (new_value, type (new_value))
 # # bool_value_2 = ("q" in "q.werty")
 # bool_value = not bool_value_1
 # print(bool_value, type(bool_value))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -80,3 +50,35 @@ print (new_value, type (new_value))
 # print(123 * 2, 456, 789, "qwe")
 # print(12 - 3)
 # print(23 + 5 * 10)
+
+
+# lesson 2
+# приведение типов
+# value = 0.0
+# value_bool = bool(value)
+# print(value_bool)
+#############################################################################
+
+# if условие:
+#     блок, если Да
+# else:
+#     блок, если Нет
+
+
+# temp = 0.1
+#
+# if temp > 0:
+#     print("Можно шапку не надевать")
+# else:
+#     print("Надень шапку!")
+
+
+case = input("Кинь кубик:") # результат всегда str!!
+case = int(case)
+print(case)
+if case == 6:
+    print("Pobedil Vasya")
+elif case == 1:
+    print("Pobedil Petya")
+else:
+    print("Proigrali vse))")
