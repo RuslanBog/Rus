@@ -98,14 +98,14 @@
 # print("Выпало число:", case, "Результат:", result)
 #################################
 # Строки и методы строк
-case = 1
-result = "qwe"
-print(f"Выпало число: {case} с результатом: {result} ")
-
-dir_name = "home"
-file_name = "test.py"
-path = f"{dir_name}/{file_name}"
-print(path)
+# case = 1
+# result = "qwe"
+# print(f"Выпало число: {case} с результатом: {result} ")
+#
+# dir_name = "home"
+# file_name = "test.py"
+# path = f"{dir_name}/{file_name}"
+# print(path)
 
 # # литералы
 # my_str_1 = "I'm Qwerty"
@@ -122,7 +122,7 @@ print(path)
 # print(my_str_1_len, my_str_1[my_str_1_len - 1])
 
 # срез строки
-my_str_1 = "IIIII'm Qwerty"
+# my_str_1 = "IIIII'm Qwerty"
 # index = 5
 # new_str = my_str_1[: index] + "K" + my_str_1[index + 1 :]
 # print(new_str)
@@ -137,10 +137,27 @@ my_str_1 = "IIIII'm Qwerty"
 # for index in range(ord(' '), ord('z') + 1, 2):
 #     print(f"index '{index}' --> '{chr(index)}'")
 #
-count = 0
-do_loop = True
+# count = 0
+# do_loop = True
+#
+# while count < 10:
+#     print("This is while loop", count)
 
-while count < 10:
-    print("This is while loop", count)
-    count += 1
+# Угадай число
+# Обработка исключений
+# Циклы while, for
+# Кортежи и списки
 
+from random import randint
+
+comp_value = randint(1, 10)
+cur_value = int(input("Угадай число от 1 до 10:"))
+go_game = True
+while go_game:
+    if cur_value > comp_value:
+        cur_value = int(input("Попробуй число меньше"))
+    elif cur_value < comp_value:
+        cur_value = int(input("Попробуй число больше"))
+    else:
+        go_game = False
+        print("Победа")
