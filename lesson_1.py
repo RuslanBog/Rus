@@ -234,3 +234,54 @@
 # val_int_1, val_int_2, my_str = my_tuple
 # print( val_int_1, my_str * 2)
 
+# my_tuple = (1, (-2, 0), ["a", 'z']) #не изменяемый тип
+# my_list = [1, (-2, 0), ["a", 'z']]
+# my_tuple[-1][0] = 100
+# print(my_tuple)
+
+# my_tuple = (1, 2, 3)
+# print(id(my_tuple))
+# my_tuple = (100, *my_tuple[1:])
+# print(id(my_tuple))
+
+# list_1 = [1, 2]
+# list_2 = [3, 4]
+#
+# new_list = [list_1.copy(), list_2]
+# print(new_list)
+#
+# list_1[0] = 100
+# list_2[0] = 300
+# print(new_list, list_1)
+
+# value = [10, 20]
+# new_list = [value.copy()] * 5
+# value[0] = 100
+# print(new_list)
+# print(value)
+
+####################################
+# new_list = []
+#
+# for symbol in "qwerty":
+#     new_list.append(symbol)
+# new_list.append(1000)
+# print(new_list)
+#
+# result = new_list.pop(0)
+# print(new_list)
+# print(result)
+
+# new_list = list("new_tuple")
+# print(new_list)
+#
+# new_str = "   ".join(new_list)
+# print(new_str)
+
+filename = 'lesson_3.py.txt'
+# filename = filename.replace("txt", "")
+
+# filename_parts = filename.split(".")
+# filename = ".".join(filename_parts[:-1])
+filename = filename.rsplit(".", 1)[0]
+print(filename)
