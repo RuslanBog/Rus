@@ -147,17 +147,67 @@
 # Обработка исключений
 # Циклы while, for
 # Кортежи и списки
+############################игра угадай число
+# from random import randint
+#
+# comp_value = randint(1, 10)
+# cur_value = int(input("Угадай число от 1 до 10:"))
+# go_game = True
+# while go_game:
+#     if cur_value > comp_value:
+#         cur_value = int(input("Попробуй число меньше"))
+#     elif cur_value < comp_value:
+#         cur_value = int(input("Попробуй число больше"))
+#     else:
+#         go_game = False
+#         print("Победа")
+#
+# from random import randint
+#
+# min_limit = 10
+# max_limit = 20
+# comp_value = randint(min_limit, max_limit)
+# cur_value = int(input(f"Угадай число от {min_limit} до {max_limit}:"))
+# go_game = True
+# while cur_value != comp_value:
+#     if cur_value > comp_value:
+#         cur_value = int(input("Попробуй число меньше"))
+#     elif cur_value < comp_value:
+#         cur_value = int(input("Попробуй число больше"))
+#     else:
+#         go_game = False
+# print("Победа")
 
-from random import randint
+################################## обработка исключений
+# value = input("Введите целое число:")
+#
+# try:
+#     value_int = int(value)
+#     result = 1 / value_int
+#     print(result)
+# except ValueError:
+#     print("Это не число!")
+# except ZeroDivisionError:
+#     print("На ноль делить нельзя!")
+###########################################циклы
 
-comp_value = randint(1, 10)
-cur_value = int(input("Угадай число от 1 до 10:"))
-go_game = True
-while go_game:
-    if cur_value > comp_value:
-        cur_value = int(input("Попробуй число меньше"))
-    elif cur_value < comp_value:
-        cur_value = int(input("Попробуй число больше"))
-    else:
-        go_game = False
-        print("Победа")
+# for  врем_перем in итер_объект:
+#     итерация
+
+# my_str = "qwerty 123 %$# ASD"
+#
+# for symbol in my_str:
+#     if symbol.isalnum()and symbol != " ":
+#         print(symbol)
+######################################### кортежи и списки
+
+my_tuple = (1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z'])
+
+my_list = [1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z']]
+
+print(my_tuple, type(my_tuple))
+print(my_list, type(my_list))
+
+index = 5
+print(my_tuple[index], my_list[index])
+print(len(my_tuple))
