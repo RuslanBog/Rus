@@ -200,14 +200,37 @@
 #     if symbol.isalnum()and symbol != " ":
 #         print(symbol)
 ######################################### кортежи и списки
+# итерируемые объекты
 
-my_tuple = (1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z'])
+# my_tuple = (1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z'])
+#
+# my_list = [1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z']]
 
-my_list = [1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z']]
+# print(my_tuple, type(my_tuple))
+# print(my_list, type(my_list))
+#
+# index = 5
+# print(my_tuple[index], my_list[index])
+# print(len(my_tuple))
+# срезы как у строк
+# new_list = my_list[:: -1]
+# print(new_list)
 
-print(my_tuple, type(my_tuple))
-print(my_list, type(my_list))
+# for value in my_list:
+#     if type(value) == int:
+#         print(value)
+################################################################ отличия!!
+# my_tuple = (1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z']) #не изменяемый тип
+# my_list = [1, -10, "qwe", True, 3.14, (-2, 0), ["a", 'z']] #изменяемый тип данных
+#
+# my_list[0] = 100
+# print(my_list)
+#
+# my_tuple = (100, *my_tuple[1:])
+# print(my_tuple)
 
-index = 5
-print(my_tuple[index], my_list[index])
-print(len(my_tuple))
+############################распаковка кортежей и списков
+# my_tuple = (1, 2, "qwe")
+# val_int_1, val_int_2, my_str = my_tuple
+# print( val_int_1, my_str * 2)
+
