@@ -279,9 +279,11 @@
 # print(new_str)
 
 filename = 'lesson_3.py.txt'
+
 # filename = filename.replace("txt", "")
 
 # filename_parts = filename.split(".")
 # filename = ".".join(filename_parts[:-1])
+
 filename = filename.rsplit(".", 1)[0]
 print(filename)
